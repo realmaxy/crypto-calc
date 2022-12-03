@@ -85,12 +85,45 @@ body {
     margin: 30px 0px 0px 0px;
 }
 
-.btc-wrapper {
-    max-width: 20%; 
-    padding: 30px;
-    background-color: ;
+.crypto-btc-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btc-bubble{
+    position: absolute;
+    max-width: 110%;
+    top: 0x;
+    left: -5%;
+    animation: flying 1s linear 0s infinite alternate none;
 }
 
 .btc-img {
-    
+    animation: flying 1s linear 0s infinite alternate none;
 }
+
+.btc-wrapper {
+    max-width: 30%; 
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.btc-wrapper:hover {
+    max-width: 33%;
+    transition: 0.5s;
+}
+
+// Bubble animation
+
+@keyframes flying {
+    0% {
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -20px;
+    }
+}
+
