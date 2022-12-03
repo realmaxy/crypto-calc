@@ -85,14 +85,19 @@ body {
     margin: 30px 0px 0px 0px;
 }
 
-.crypto-btc-link {
+.home-crypto-box {
+    display: flex;
+    align-items: center;
+}
+
+.crypto-link {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btc-bubble{
+.bubble{
     position: absolute;
     max-width: 110%;
     top: 0x;
@@ -100,21 +105,16 @@ body {
     animation: flying 1s linear 0s infinite alternate none;
 }
 
-.btc-img {
+.crypto-img {
     animation: flying 1s linear 0s infinite alternate none;
 }
 
-.btc-wrapper {
-    max-width: 30%; 
+.crypto-wrapper {
     padding: 30px;
-    margin: 0 auto;
     margin-top: 100px;
 }
 
-.btc-wrapper:hover {
-    max-width: 33%;
-    transition: 0.5s;
-}
+
 
 // Bubble animation
 
@@ -127,3 +127,63 @@ body {
     }
 }
 
+// btc settings
+
+.btc-wrapper {
+    max-width: 35%;
+}
+
+.btc-wrapper:hover {
+    max-width: 40%;
+    transition: 0.5s;
+}
+
+// eth setting
+
+
+.eth-wrapper {
+    max-width: 20%;     
+}
+
+.eth-wrapper:hover {
+    max-width: 23%;
+    transition: 0.5s;
+}
+
+
+// mask settings
+
+
+.mask-wrapper {
+    max-width: 15%;
+    margin-bottom: -220px;
+}
+
+.mask-wrapper:hover {
+    max-width: 19%;    
+    transition: 0.5s;
+}
+
+// sol settings
+
+.sol-wrapper {
+    max-width: 20%;
+    margin-top: -30px;
+    margin-left: -100px;
+}
+
+.sol-wrapper:hover {
+    max-width: 23%;    
+    transition: 0.5s;
+}
+
+// atom settings
+
+.atom-wrapper {
+    max-width: 15%;
+}
+
+.atom-wrapper:hover {
+    max-width: 18%;    
+    transition: 0.5s;
+}
