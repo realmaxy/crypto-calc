@@ -3,23 +3,42 @@
 
 //Usage fonts, colors
 $font-stack:'Inter', sans-serif;
-$main-color-light-theme: #fec432;
-$second-color-light-theme: #f68a19;
+$main-color-light-theme: #2639ED;
+$main-color-dark-theme: #fec432;
+$second-color-dark-theme: #f68a19;
 
 
 $container-width: 1170px;
 $title-size: 30px;
 $text-size: 16px; 
 
-body {
-    font-family: $font-stack;
+
+//usage blocks
+
+.none {
+    display: none;
 }
 
 .title {
     font-size: $title-size;
-    color: $main-color-light-theme-hover;
+    color: $main-color-light-theme;
     font-weight: 600;
 }
+
+.text {
+    font-size: $text-size;
+    color: $main-color-light-theme;
+    font-weight: 400;
+}
+
+
+// ----------------------
+
+
+body {
+    font-family: $font-stack;
+}
+
 
 .container {
     max-width: $container-width;
@@ -29,16 +48,49 @@ body {
 .menu {
     display: flex;
     align-items: center;
-    
+}
 
-    .logo {
-        max-width: 10%;
-        display: flex;
-        align-items: center;
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 20%;
 
-        .logo-img {
-            max-width: 50%;
-            margin: 0px 10px 0px 0px;
-        }
+    .logo-img {
+        max-width: 27%;
+        max-height: 27%;
     }
+
+    .title {
+        margin: 0px 0px 0px 7px;
+    }
+}
+
+.menu__lang-toggler {
+    
+    margin-left: auto;
+    margin-right: 10px;
+
+    .text {
+        font-size: 25px;
+    }
+}
+
+.menu__theme-toggler {
+    max-width: 50px;
+}
+
+.main__title {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0px 0px 0px;
+}
+
+.btc-wrapper {
+    max-width: 20%; 
+    padding: 30px;
+    background-color: ;
+}
+
+.btc-img {
+    
 }
