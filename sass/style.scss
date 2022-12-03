@@ -1,10 +1,44 @@
 @use '../../sass/components/button';
 @use '../../sass/components/reset';
 
-
+//Usage fonts, colors
 $font-stack:'Inter', sans-serif;
-$main-color-light-theme: #2639ED;
-$main-color-light-theme-hover: #0c1ba8;
-$main-color-dark-theme: #eab629;
-$main-color-dark-theme-hover: #c3971d
+$main-color-light-theme: #fec432;
+$second-color-light-theme: #f68a19;
 
+
+$container-width: 1170px;
+$title-size: 30px;
+$text-size: 16px; 
+
+body {
+    font-family: $font-stack;
+}
+
+.title {
+    font-size: $title-size;
+    color: $main-color-light-theme-hover;
+    font-weight: 600;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    
+
+    .logo {
+        max-width: 10%;
+        display: flex;
+        align-items: center;
+
+        .logo-img {
+            max-width: 50%;
+            margin: 0px 10px 0px 0px;
+        }
+    }
+}
