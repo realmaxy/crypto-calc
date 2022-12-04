@@ -262,4 +262,30 @@ body {
 .atom-wrapper:hover {
   max-width: 18%;
   transition: 0.5s;
+}
+
+.container__profit-calc {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.crypto-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btc-column, .crypto-column {
+  width: 19%;
+}
+
+.btc-buyCount__input-row, .btc-buyPrice__input-row, .btc-buyOrderPrice__input-row {
+  display: flex;
+  background-color: rgb(205, 208, 221);
+}
+
+.input {
+  width: 70%;
+  color: #2639ED;
+  text-align: center;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */
