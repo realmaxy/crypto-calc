@@ -280,12 +280,16 @@ body {
 
 .btc-buyCount__input-row, .btc-buyPrice__input-row, .btc-buyOrderPrice__input-row {
   display: flex;
-  background-color: rgb(205, 208, 221);
 }
 
 .input {
-  width: 70%;
+  width: 90%;
   color: #2639ED;
   text-align: center;
   font-size: 25px;
+  box-shadow: 1px 2px 8px 10px rgba(34, 60, 80, 0.2);
+}
+
+.coin-image {
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */
