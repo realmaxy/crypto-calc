@@ -290,6 +290,22 @@ body {
   box-shadow: 1px 2px 8px 10px rgba(34, 60, 80, 0.2);
 }
 
+.items-text {
+  font-size: 24px;
+  color: #2639ED;
+}
+
+.btc-buy-count-item {
+  display: flex;
+  align-items: center;
+}
+
 .coin-image {
   width: 30px;
+}
+
+.delete {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/delete-btn.png);
 }/*# sourceMappingURL=style.css.map */
