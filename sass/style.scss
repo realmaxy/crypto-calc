@@ -232,6 +232,11 @@ box-shadow: 1px 2px 8px 10px rgba(34, 60, 80, 0.2);
     align-items: center;
 }
 
+.btc-buyPrice-item {
+    display: flex;
+    align-items: center;
+}
+
 .coin-image {
     width: 30px;
 }
@@ -243,3 +248,9 @@ box-shadow: 1px 2px 8px 10px rgba(34, 60, 80, 0.2);
 }
 
 // =================================
+
+.calcButton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}

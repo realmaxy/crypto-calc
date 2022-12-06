@@ -1,47 +1,49 @@
+const calcButton = document.querySelector('.calcButton')
 
-function createCoinCountItem() {
+calcButton.addEventListener('click', computeProfit)
 
-    const coinCountText = document.createElement('p');
-    coinCountText.className = 'items-text';
-    coinCountText.innerText = coinCountForm.value;
+function computeProfit() {
+ 
+    const countValues = document.querySelectorAll('.count-text')
+    const priceValues = document.querySelectorAll('.price-text')
+    const orderList = document.querySelector('.orderList')
 
-    const coinCountDeleteButton = document.createElement('button');
-    coinCountDeleteButton.className = 'delete';
-    coinCountDeleteButton.onclick = () => {
-        const getParent = coinCountDeleteButton.parentElement;
-        getParent.remove();
-    }
     
-    const newItem = document.createElement('li');
-    newItem.className = 'btc-buy-count-item';
-
-
-    newItem.appendChild(coinCountText);
-    newItem.appendChild(coinCountDeleteButton);
-
-
-    return newItem;
-}
-
-
-function addCoinCountItem(event) { 
-    event.preventDefault();
-
-    if(coinCountForm.value === '') {
-        return alert('Нужно ввести значение');
+    if(orderList.childNodes.length > 0) {
+        for(let i = 0; i <= orderList.childNodes.length; i++) {
+            orderList.removeChild(orderList.firstChild)
+        }
     }
 
-    const newItem = createCoinCountItem(coinCountForm.value) 
-    coinCountList.appendChild(newItem);
-    coinCountForm.value = '';
+    if (countValues.length == priceValues.length) {
+        for(let i = 0; i < countValues.length; i++) {
+            let countValue = countValues[i].innerText;
+            let priceValue = priceValues[i].innerText;
+
+            const newItem = document.createElement('p');
+            newItem.className = 'text';
+            newItem.innerText = countValue * priceValue
+
+            orderList.append(newItem)
+        }
+    }
+    else {
+        alert('Необходимо ввести значение')
+    }
+
 
 }
 
+// function computeProfit() {
+ 
+//     const countValue = document.querySelector('.count-text')
+//     const priceValue = document.querySelector('.price-text')
 
-const coinCountForm = document.querySelector('.btc-buyCount__input');
-const coinCountAddButton = document.querySelector('.btc-buyCount__add-btn');
-const coinCountList = document.querySelector('.btc-buy-count-list');
-const coinCountListItem = document.querySelectorAll('.btc-buy-count-item');
+//     const newItem = document.createElement('p');
+//     newItem.className = 'text';
+//     newItem.innerText = countValue.innerText * priceValue.innerText;
 
-coinCountAddButton.addEventListener('click', addCoinCountItem);
+//     const orderList = document.querySelector('.orderList')
 
+//     orderList.append(newItem)
+// }

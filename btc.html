@@ -31,30 +31,27 @@
             <div class="btc-row crypto-row">
                 <div class="btc-column crypto-column">
                     <h1 class="btc-buy-count-title title">Куплено монет</h1>
-                    <ul class="btc-buy-count-list">
-                        <li class="btc-buy-count-item">
-                            
-                        </li>
-                    </ul>
+                    <ul class="btc-buy-count-list profit-calc-list"></ul>
                     <form class="btc-buyCount__input-row">
-                        <input type="text" class="btc-buyCount__input input">
-                        <button class="btc-buyCount__add-btn add-btn " type="submit">
+                        <input type="text" class="btc-buyCount__input profit-calc-input input">
+                        <button class="btc-buyCount__add-btn add-btn profit-calc-add-button" type="submit">
                             <img src="img/add-btn.png" alt="">
                         </button>
                     </form>
                 </div>
                 <div class="btc-column crypto-column">
                     <h1 class="btc-buy-price-title title">Цена покупки</h1>
+                    <ul class="btc-buyPrice-list profit-calc-list"></ul>
                     <div class="btc-buyPrice__input-row">
-                        <input type="text" class="btc-buyPrice__input input">
-                        <button class="btc-buyPrice__add-btn add-btn">
+                        <input type="text" class="btc-buyPrice__input profit-calc-input input">
+                        <button class="btc-buyPrice__add-btn add-btn profit-calc-add-button">
                             <img src="img/add-btn.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="btc-column crypto-column">
-                    <h1 class="btc-buy-price-title title">Цена ордера</h1>
-                    
+                    <h1 class="btc-orderPrice-title title">Цена ордера</h1>
+                    <div class="orderList"></div>
                 </div>
                 <div class="btc-column crypto-column">
                     <h1 class="btc-buy-price-title title">Актуальная цена</h1>
@@ -66,8 +63,13 @@
                 </div>
             </div>  
         </div>
+        <button class="button calcButton">Посчитать</button>
     </main>
 
     <script src="js/ProfitCalculator.js"></script>
+    <script src="js/addItems.js"></script>
 </body>
 </html>
+
+
+
